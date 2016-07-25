@@ -1,0 +1,67 @@
+@import "../../Mixin/index"
+
+// 文本框基本样式
+.input
+    border-width: 1px
+    border-style: solid
+    border-radius: 4px
+    vertical-align: middle
+    &:disabled
+        cursor: not-allowed
+        background-color: #eee
+
+// 文本框尺寸
+.extra-small
+    padding: px($half - 2) px($half)
+    font-size: px($font-size - 2)
+
+.small
+    padding: px($half) px($small)
+    font-size: px($font-size - 1)
+
+.medium
+    min-width: 200px
+    max-width: 100%
+    padding: px($small) px($small)
+
+.large
+    padding: px($small) px($medium)
+    font-size: px($font-size + 2)
+
+// 文本框状态样式
+.normal
+    border-color: #ccc
+    &:focus
+        border-color: $theme
+
+.success
+    border-color: #49874a
+
+.error
+    border-color: #b74b4b
+
+.warning
+    border-color: #bf9858
+
+// 文本框布局
+.group
+    margin-bottom: px($medium)
+
+.label
+    vertical-align: middle
+
+// 基本表单布局
+.basic
+    .label
+        margin-bottom: px($small)
+
+// 内联表单布局
+.inline
+    .group,
+    .group .label,
+    .group .control
+        display: inline-block
+    .group,
+    .group .label
+        margin-right: px($small)
+    
