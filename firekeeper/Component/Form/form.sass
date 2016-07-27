@@ -48,7 +48,8 @@
     margin-bottom: px($medium)
 
 .label
-    vertical-align: middle
+    label
+        vertical-align: middle
 
 // 基本表单布局
 .basic
@@ -64,4 +65,11 @@
     .group,
     .group .label
         margin-right: px($small)
+
+// 水平布局
+.horizontal
+    .group
+        .label
+            text-align: right
+            padding-top: px($small - 2)
     

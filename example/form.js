@@ -14,11 +14,11 @@ export default class FormExample extends Component {
     render() {
         return (
             <div className={classnames(Styles['button-example'])}>
-                <Form>
+                <Form layout="basic">
                     <FormGroup label='姓名'>
                         <Input />
                     </FormGroup>
-                    <FormGroup label='姓名'>
+                    <FormGroup label='电话号码'>
                         <Input />
                     </FormGroup>
                 </Form>
